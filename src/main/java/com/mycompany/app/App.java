@@ -3,12 +3,22 @@ package com.mycompany.app;
 
 public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
     
-    public static int search(int[] arr1, int[] arr2, int first, int second){
-        return arr1[first] + arr2[second];
+    public static boolean decrypt(int[] crypted, int[] solved, int add, int mult){
+    	if (crypted == null){
+    		if (solved != null)
+    			return false;
+    		else return true;
+    	}
+    	
+    	if (crypted.length != solved.length)
+    		return false;
+    	
+        for (int i = 0; i < crypted.length; i++){
+        	if ((crypted[i]+add)*mult != solved[i])
+        		return false;
+        }
+        return true;
     }
 }
+
