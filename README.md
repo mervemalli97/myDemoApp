@@ -7,3 +7,5 @@ the cryption is made by adding the first integer and multiplying the result with
 it returns either true or false
 
 -----
+
+[![Build Status](https://travis-ci.org/mervemalli97/myDemoApp.svg?branch=master)](https://travis-ci.org/mervemalli97/myDemoApp)
